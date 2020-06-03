@@ -1,0 +1,261 @@
+{
+  "start-time" : "2020-06-03T11:43:37.124",
+  "akka-version" : "2.6.0",
+  "akka-diagnostics-version" : "1.1.12",
+  "akka-http-version" : "10.1.11",
+  "akka-split-brain-resolver-version" : "1.1.12",
+  "classpath" : "C:\Users\HR11MD\workspace\akka-cluster\LAC-Fundamentals-v1\exercises\scala\target\scala-2.13\classes;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\fasterxml\jackson\core\jackson-annotations\2.10.0\jackson-annotations-2.10.0.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\fasterxml\jackson\core\jackson-core\2.10.0\jackson-core-2.10.0.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\fasterxml\jackson\core\jackson-databind\2.10.0\jackson-databind-2.10.0.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\fasterxml\jackson\dataformat\jackson-dataformat-cbor\2.10.0\jackson-dataformat-cbor-2.10.0.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.10.0\jackson-datatype-jdk8-2.10.0.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.10.0\jackson-datatype-jsr310-2.10.0.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\fasterxml\jackson\module\jackson-module-parameter-names\2.10.0\jackson-module-parameter-names-2.10.0.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\fasterxml\jackson\module\jackson-module-paranamer\2.10.0\jackson-module-paranamer-2.10.0.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\fasterxml\jackson\module\jackson-module-scala_2.13\2.10.0\jackson-module-scala_2.13-2.10.0.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\github\jnr\jffi\1.2.18\jffi-1.2.18.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\github\jnr\jffi\1.2.18\jffi-1.2.18-native.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\github\jnr\jnr-a64asm\1.0.0\jnr-a64asm-1.0.0.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\github\jnr\jnr-constants\0.9.12\jnr-constants-0.9.12.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\github\jnr\jnr-ffi\2.1.9\jnr-ffi-2.1.9.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\github\jnr\jnr-x86asm\1.0.2\jnr-x86asm-1.0.2.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\google\protobuf\protobuf-java\3.10.0\protobuf-java-3.10.0.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\lightbend\akka\management\akka-management-cluster-http_2.13\1.0.5\akka-management-cluster-http_2.13-1.0.5.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\lightbend\akka\management\akka-management_2.13\1.0.5\akka-management_2.13-1.0.5.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo.lightbend.com\pass\DKKmZaxU6F22sMCgmfEhaRrIkT9HnYB66l5kjWYkhewgkwha\commercial-releases\com\lightbend\akka\akka-diagnostics_2.13\1.1.12\akka-diagnostics_2.13-1.1.12.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo.lightbend.com\pass\DKKmZaxU6F22sMCgmfEhaRrIkT9HnYB66l5kjWYkhewgkwha\commercial-releases\com\lightbend\akka\akka-split-brain-resolver_2.13\1.1.12\akka-split-brain-resolver_2.13-1.1.12.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo.lightbend.com\pass\DKKmZaxU6F22sMCgmfEhaRrIkT9HnYB66l5kjWYkhewgkwha\commercial-releases\com\lightbend\cinnamon\cinnamon-akka-http_2.13\2.13.0\cinnamon-akka-http_2.13-2.13.0.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo.lightbend.com\pass\DKKmZaxU6F22sMCgmfEhaRrIkT9HnYB66l5kjWYkhewgkwha\commercial-releases\com\lightbend\cinnamon\cinnamon-akka_2.13\2.13.0\cinnamon-akka_2.13-2.13.0.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo.lightbend.com\pass\DKKmZaxU6F22sMCgmfEhaRrIkT9HnYB66l5kjWYkhewgkwha\commercial-releases\com\lightbend\cinnamon\cinnamon-common\2.13.0\cinnamon-common-2.13.0.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo.lightbend.com\pass\DKKmZaxU6F22sMCgmfEhaRrIkT9HnYB66l5kjWYkhewgkwha\commercial-releases\com\lightbend\cinnamon\cinnamon-core-java\2.13.0\cinnamon-core-java-2.13.0.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo.lightbend.com\pass\DKKmZaxU6F22sMCgmfEhaRrIkT9HnYB66l5kjWYkhewgkwha\commercial-releases\com\lightbend\cinnamon\cinnamon-core_2.13\2.13.0\cinnamon-core_2.13-2.13.0.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo.lightbend.com\pass\DKKmZaxU6F22sMCgmfEhaRrIkT9HnYB66l5kjWYkhewgkwha\commercial-releases\com\lightbend\cinnamon\cinnamon-java\2.13.0\cinnamon-java-2.13.0.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo.lightbend.com\pass\DKKmZaxU6F22sMCgmfEhaRrIkT9HnYB66l5kjWYkhewgkwha\commercial-releases\com\lightbend\cinnamon\cinnamon-jvm-metrics-producer\2.13.0\cinnamon-jvm-metrics-producer-2.13.0.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo.lightbend.com\pass\DKKmZaxU6F22sMCgmfEhaRrIkT9HnYB66l5kjWYkhewgkwha\commercial-releases\com\lightbend\cinnamon\cinnamon-prometheus-httpserver\2.13.0\cinnamon-prometheus-httpserver-2.13.0.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo.lightbend.com\pass\DKKmZaxU6F22sMCgmfEhaRrIkT9HnYB66l5kjWYkhewgkwha\commercial-releases\com\lightbend\cinnamon\cinnamon-prometheus\2.13.0\cinnamon-prometheus-2.13.0.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo.lightbend.com\pass\DKKmZaxU6F22sMCgmfEhaRrIkT9HnYB66l5kjWYkhewgkwha\commercial-releases\com\lightbend\cinnamon\cinnamon-scala_2.13\2.13.0\cinnamon-scala_2.13-2.13.0.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\thoughtworks\paranamer\paranamer\2.8\paranamer-2.8.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\typesafe\akka\akka-actor_2.13\2.6.0\akka-actor_2.13-2.6.0.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\typesafe\akka\akka-cluster-sharding_2.13\2.6.0\akka-cluster-sharding_2.13-2.6.0.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\typesafe\akka\akka-cluster-tools_2.13\2.6.0\akka-cluster-tools_2.13-2.6.0.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\typesafe\akka\akka-cluster_2.13\2.6.0\akka-cluster_2.13-2.6.0.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\typesafe\akka\akka-coordination_2.13\2.6.0\akka-coordination_2.13-2.6.0.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\typesafe\akka\akka-distributed-data_2.13\2.6.0\akka-distributed-data_2.13-2.6.0.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\typesafe\akka\akka-http-core_2.13\10.1.11\akka-http-core_2.13-10.1.11.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\typesafe\akka\akka-http-spray-json_2.13\10.1.11\akka-http-spray-json_2.13-10.1.11.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\typesafe\akka\akka-http_2.13\10.1.11\akka-http_2.13-10.1.11.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\typesafe\akka\akka-parsing_2.13\10.1.11\akka-parsing_2.13-10.1.11.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\typesafe\akka\akka-persistence_2.13\2.6.0\akka-persistence_2.13-2.6.0.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\typesafe\akka\akka-protobuf-v3_2.13\2.6.0\akka-protobuf-v3_2.13-2.6.0.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\typesafe\akka\akka-remote_2.13\2.6.0\akka-remote_2.13-2.6.0.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\typesafe\akka\akka-serialization-jackson_2.13\2.6.0\akka-serialization-jackson_2.13-2.6.0.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\typesafe\akka\akka-slf4j_2.13\2.6.0\akka-slf4j_2.13-2.6.0.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\typesafe\akka\akka-stream_2.13\2.6.0\akka-stream_2.13-2.6.0.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\typesafe\config\1.4.0\config-1.4.0.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\typesafe\ssl-config-core_2.13\0.4.0\ssl-config-core_2.13-0.4.0.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\io\prometheus\simpleclient\0.8.0\simpleclient-0.8.0.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\io\prometheus\simpleclient_common\0.8.0\simpleclient_common-0.8.0.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\io\prometheus\simpleclient_httpserver\0.8.0\simpleclient_httpserver-0.8.0.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\io\spray\spray-json_2.13\1.3.5\spray-json_2.13-1.3.5.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\agrona\agrona\1.0.8\agrona-1.0.8.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\lmdbjava\lmdbjava\0.7.0\lmdbjava-0.7.0.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\ow2\asm\asm-analysis\5.0.3\asm-analysis-5.0.3.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\ow2\asm\asm-commons\5.0.3\asm-commons-5.0.3.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\ow2\asm\asm-tree\5.0.3\asm-tree-5.0.3.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\ow2\asm\asm-util\5.0.3\asm-util-5.0.3.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\ow2\asm\asm\5.0.3\asm-5.0.3.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\modules\scala-java8-compat_2.13\0.9.0\scala-java8-compat_2.13-0.9.0.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\modules\scala-parser-combinators_2.13\1.1.2\scala-parser-combinators_2.13-1.1.2.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.1\scala-library-2.13.1.jar;C:\Users\HR11MD\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\slf4j\slf4j-api\1.7.28\slf4j-api-1.7.28.jar",
+  "configuration-warnings" : [],
+  "system-metrics" : {
+    "heap-init" : 530579456,
+    "heap-max" : 8480882688,
+    "heap-used" : 13571080,
+    "heap-committed" : 41943040,
+    "os-processors" : 8,
+    "mem-pool-0" : {
+      "name" : "CodeHeap 'non-nmethods'",
+      "type" : "Non-heap memory",
+      "init" : 2555904,
+      "max" : 5898240,
+      "used" : 1340672,
+      "committed" : 2555904
+    },
+    "mem-pool-1" : {
+      "name" : "Metaspace",
+      "type" : "Non-heap memory",
+      "init" : 0,
+      "max" : -1,
+      "used" : 42244472,
+      "committed" : 43855872
+    },
+    "mem-pool-2" : {
+      "name" : "CodeHeap 'profiled nmethods'",
+      "type" : "Non-heap memory",
+      "init" : 2555904,
+      "max" : 122880000,
+      "used" : 6925696,
+      "committed" : 6946816
+    },
+    "mem-pool-3" : {
+      "name" : "Compressed Class Space",
+      "type" : "Non-heap memory",
+      "init" : 0,
+      "max" : 1073741824,
+      "used" : 5538304,
+      "committed" : 6369280
+    },
+    "mem-pool-4" : {
+      "name" : "G1 Eden Space",
+      "type" : "Heap memory",
+      "init" : 27262976,
+      "max" : -1,
+      "used" : 0,
+      "committed" : 16777216
+    },
+    "mem-pool-5" : {
+      "name" : "G1 Old Gen",
+      "type" : "Heap memory",
+      "init" : 503316480,
+      "max" : 8480882688,
+      "used" : 12209152,
+      "committed" : 23068672
+    },
+    "mem-pool-6" : {
+      "name" : "G1 Survivor Space",
+      "type" : "Heap memory",
+      "init" : 0,
+      "max" : -1,
+      "used" : 1361928,
+      "committed" : 2097152
+    },
+    "mem-pool-7" : {
+      "name" : "CodeHeap 'non-profiled nmethods'",
+      "type" : "Non-heap memory",
+      "init" : 2555904,
+      "max" : 122880000,
+      "used" : 1657472,
+      "committed" : 2555904
+    }
+  },
+  "configuration" : {
+    "akka" : {
+        "actor" : {
+            "serialization-bindings" : {
+                "com.reactivebbq.loyalty.SerializableMessage" : "jackson-cbor"
+            }
+        },
+        "http" : {
+            "server" : {
+                "default-http-port" : 8000,
+                "server-header" : "akka-http/10.1.11"
+            },
+            "version" : "10.1.11"
+        },
+        "loggers" : [
+            "akka.event.slf4j.Slf4jLogger"
+        ],
+        "logging-filter" : "akka.event.slf4j.Slf4jLoggingFilter",
+        "loglevel" : "DEBUG",
+        "version" : "2.6.0"
+    },
+    "cinnamon" : {
+        "akka" : {
+            "actors" : {
+                "/system/sharding/*" : {
+                    "report-by" : "class"
+                },
+                "/user/*" : {
+                    "report-by" : "class"
+                }
+            },
+            "cluster" : {
+                "node-metrics" : "on",
+                "shard-region-info" : "on"
+            },
+            "dispatchers" : {
+                "basic-information" : {
+                    "names" : [
+                        "*"
+                    ]
+                },
+                "time-information" : {
+                    "names" : [
+                        "*"
+                    ]
+                }
+            },
+            "http" : {
+                "servers" : {
+                    "*:*" : {
+                        "paths" : {
+                            "*" : {
+                                "metrics" : "on"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "prometheus" : {
+            "exporters" : [
+                "http-server"
+            ],
+            "http-server" : {
+                "host" : "0.0.0.0",
+                "port" : 9001
+            }
+        }
+    },
+    "excluded-sensitive-paths" : [
+        "user.home",
+        "user.dir",
+        "user.name"
+    ],
+    "file" : {
+        "encoding" : "UTF-8",
+        "separator" : "\\"
+    },
+    "java" : {
+        "class" : {
+            "path" : "C:\\Users\\HR11MD\\workspace\\akka-cluster\\LAC-Fundamentals-v1\\exercises\\scala\\target\\scala-2.13\\classes;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\qos\\logback\\logback-classic\\1.2.3\\logback-classic-1.2.3.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\qos\\logback\\logback-core\\1.2.3\\logback-core-1.2.3.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-annotations\\2.10.0\\jackson-annotations-2.10.0.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-core\\2.10.0\\jackson-core-2.10.0.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-databind\\2.10.0\\jackson-databind-2.10.0.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\dataformat\\jackson-dataformat-cbor\\2.10.0\\jackson-dataformat-cbor-2.10.0.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\datatype\\jackson-datatype-jdk8\\2.10.0\\jackson-datatype-jdk8-2.10.0.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\datatype\\jackson-datatype-jsr310\\2.10.0\\jackson-datatype-jsr310-2.10.0.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\module\\jackson-module-parameter-names\\2.10.0\\jackson-module-parameter-names-2.10.0.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\module\\jackson-module-paranamer\\2.10.0\\jackson-module-paranamer-2.10.0.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\module\\jackson-module-scala_2.13\\2.10.0\\jackson-module-scala_2.13-2.10.0.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\jnr\\jffi\\1.2.18\\jffi-1.2.18.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\jnr\\jffi\\1.2.18\\jffi-1.2.18-native.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\jnr\\jnr-a64asm\\1.0.0\\jnr-a64asm-1.0.0.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\jnr\\jnr-constants\\0.9.12\\jnr-constants-0.9.12.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\jnr\\jnr-ffi\\2.1.9\\jnr-ffi-2.1.9.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\jnr\\jnr-x86asm\\1.0.2\\jnr-x86asm-1.0.2.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\protobuf\\protobuf-java\\3.10.0\\protobuf-java-3.10.0.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\lightbend\\akka\\management\\akka-management-cluster-http_2.13\\1.0.5\\akka-management-cluster-http_2.13-1.0.5.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\lightbend\\akka\\management\\akka-management_2.13\\1.0.5\\akka-management_2.13-1.0.5.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.lightbend.com\\pass\\DKKmZaxU6F22sMCgmfEhaRrIkT9HnYB66l5kjWYkhewgkwha\\commercial-releases\\com\\lightbend\\akka\\akka-diagnostics_2.13\\1.1.12\\akka-diagnostics_2.13-1.1.12.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.lightbend.com\\pass\\DKKmZaxU6F22sMCgmfEhaRrIkT9HnYB66l5kjWYkhewgkwha\\commercial-releases\\com\\lightbend\\akka\\akka-split-brain-resolver_2.13\\1.1.12\\akka-split-brain-resolver_2.13-1.1.12.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.lightbend.com\\pass\\DKKmZaxU6F22sMCgmfEhaRrIkT9HnYB66l5kjWYkhewgkwha\\commercial-releases\\com\\lightbend\\cinnamon\\cinnamon-akka-http_2.13\\2.13.0\\cinnamon-akka-http_2.13-2.13.0.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.lightbend.com\\pass\\DKKmZaxU6F22sMCgmfEhaRrIkT9HnYB66l5kjWYkhewgkwha\\commercial-releases\\com\\lightbend\\cinnamon\\cinnamon-akka_2.13\\2.13.0\\cinnamon-akka_2.13-2.13.0.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.lightbend.com\\pass\\DKKmZaxU6F22sMCgmfEhaRrIkT9HnYB66l5kjWYkhewgkwha\\commercial-releases\\com\\lightbend\\cinnamon\\cinnamon-common\\2.13.0\\cinnamon-common-2.13.0.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.lightbend.com\\pass\\DKKmZaxU6F22sMCgmfEhaRrIkT9HnYB66l5kjWYkhewgkwha\\commercial-releases\\com\\lightbend\\cinnamon\\cinnamon-core-java\\2.13.0\\cinnamon-core-java-2.13.0.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.lightbend.com\\pass\\DKKmZaxU6F22sMCgmfEhaRrIkT9HnYB66l5kjWYkhewgkwha\\commercial-releases\\com\\lightbend\\cinnamon\\cinnamon-core_2.13\\2.13.0\\cinnamon-core_2.13-2.13.0.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.lightbend.com\\pass\\DKKmZaxU6F22sMCgmfEhaRrIkT9HnYB66l5kjWYkhewgkwha\\commercial-releases\\com\\lightbend\\cinnamon\\cinnamon-java\\2.13.0\\cinnamon-java-2.13.0.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.lightbend.com\\pass\\DKKmZaxU6F22sMCgmfEhaRrIkT9HnYB66l5kjWYkhewgkwha\\commercial-releases\\com\\lightbend\\cinnamon\\cinnamon-jvm-metrics-producer\\2.13.0\\cinnamon-jvm-metrics-producer-2.13.0.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.lightbend.com\\pass\\DKKmZaxU6F22sMCgmfEhaRrIkT9HnYB66l5kjWYkhewgkwha\\commercial-releases\\com\\lightbend\\cinnamon\\cinnamon-prometheus-httpserver\\2.13.0\\cinnamon-prometheus-httpserver-2.13.0.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.lightbend.com\\pass\\DKKmZaxU6F22sMCgmfEhaRrIkT9HnYB66l5kjWYkhewgkwha\\commercial-releases\\com\\lightbend\\cinnamon\\cinnamon-prometheus\\2.13.0\\cinnamon-prometheus-2.13.0.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.lightbend.com\\pass\\DKKmZaxU6F22sMCgmfEhaRrIkT9HnYB66l5kjWYkhewgkwha\\commercial-releases\\com\\lightbend\\cinnamon\\cinnamon-scala_2.13\\2.13.0\\cinnamon-scala_2.13-2.13.0.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\thoughtworks\\paranamer\\paranamer\\2.8\\paranamer-2.8.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\akka\\akka-actor_2.13\\2.6.0\\akka-actor_2.13-2.6.0.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\akka\\akka-cluster-sharding_2.13\\2.6.0\\akka-cluster-sharding_2.13-2.6.0.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\akka\\akka-cluster-tools_2.13\\2.6.0\\akka-cluster-tools_2.13-2.6.0.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\akka\\akka-cluster_2.13\\2.6.0\\akka-cluster_2.13-2.6.0.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\akka\\akka-coordination_2.13\\2.6.0\\akka-coordination_2.13-2.6.0.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\akka\\akka-distributed-data_2.13\\2.6.0\\akka-distributed-data_2.13-2.6.0.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\akka\\akka-http-core_2.13\\10.1.11\\akka-http-core_2.13-10.1.11.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\akka\\akka-http-spray-json_2.13\\10.1.11\\akka-http-spray-json_2.13-10.1.11.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\akka\\akka-http_2.13\\10.1.11\\akka-http_2.13-10.1.11.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\akka\\akka-parsing_2.13\\10.1.11\\akka-parsing_2.13-10.1.11.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\akka\\akka-persistence_2.13\\2.6.0\\akka-persistence_2.13-2.6.0.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\akka\\akka-protobuf-v3_2.13\\2.6.0\\akka-protobuf-v3_2.13-2.6.0.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\akka\\akka-remote_2.13\\2.6.0\\akka-remote_2.13-2.6.0.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\akka\\akka-serialization-jackson_2.13\\2.6.0\\akka-serialization-jackson_2.13-2.6.0.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\akka\\akka-slf4j_2.13\\2.6.0\\akka-slf4j_2.13-2.6.0.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\akka\\akka-stream_2.13\\2.6.0\\akka-stream_2.13-2.6.0.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\config\\1.4.0\\config-1.4.0.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\ssl-config-core_2.13\\0.4.0\\ssl-config-core_2.13-0.4.0.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\io\\prometheus\\simpleclient\\0.8.0\\simpleclient-0.8.0.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\io\\prometheus\\simpleclient_common\\0.8.0\\simpleclient_common-0.8.0.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\io\\prometheus\\simpleclient_httpserver\\0.8.0\\simpleclient_httpserver-0.8.0.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\io\\spray\\spray-json_2.13\\1.3.5\\spray-json_2.13-1.3.5.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\agrona\\agrona\\1.0.8\\agrona-1.0.8.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\commons\\commons-lang3\\3.5\\commons-lang3-3.5.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\hdrhistogram\\HdrHistogram\\2.1.12\\HdrHistogram-2.1.12.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\lmdbjava\\lmdbjava\\0.7.0\\lmdbjava-0.7.0.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\ow2\\asm\\asm-analysis\\5.0.3\\asm-analysis-5.0.3.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\ow2\\asm\\asm-commons\\5.0.3\\asm-commons-5.0.3.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\ow2\\asm\\asm-tree\\5.0.3\\asm-tree-5.0.3.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\ow2\\asm\\asm-util\\5.0.3\\asm-util-5.0.3.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\ow2\\asm\\asm\\5.0.3\\asm-5.0.3.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\reactivestreams\\reactive-streams\\1.0.3\\reactive-streams-1.0.3.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-java8-compat_2.13\\0.9.0\\scala-java8-compat_2.13-0.9.0.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-parser-combinators_2.13\\1.1.2\\scala-parser-combinators_2.13-1.1.2.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.13.1\\scala-library-2.13.1.jar;C:\\Users\\HR11MD\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\slf4j\\slf4j-api\\1.7.28\\slf4j-api-1.7.28.jar",
+            "version" : "57.0"
+        },
+        "home" : "C:\\Users\\HR11MD\\jdk-13.0.2",
+        "io" : {
+            "tmpdir" : "C:\\Users\\HR11MD\\AppData\\Local\\Temp\\"
+        },
+        "library" : {
+            "path" : "C:\\Users\\HR11MD\\jdk-13.0.2\\bin;C:\\WINDOWS\\Sun\\Java\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\SafeNet\\Authentication\\SAC\\x64;C:\\Program Files\\SafeNet\\Authentication\\SAC\\x32;%MAVEN%\\bin;%JAVA_HOME%\\bin;C:\\Users\\HR11MD\\Nodejs\\;C:\\Users\\HR11MD\\SBT\\bin;C:\\Program Files\\PuTTY\\;C:\\Users\\HR11MD\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\HR11MD\\AppData\\Local\\Programs\\Git\\cmd;C:\\Users\\HR11MD\\Programs\\chocolatey\\bin;C:\\Users\\HR11MD\\Programs\\tools\\git\\bin;C:\\Users\\HR11MD\\apache-maven-3.6.3-bin\\apache-maven-3.6.3\\bin;C:\\Users\\HR11MD\\jdk-13.0.2\\bin;C:\\Users\\HR11MD\\AppData\\Roaming\\npm;C:\\Users\\HR11MD\\Microsoft VS Code\\bin;C:\\Users\\HR11MD\\gradle-6.3-all\\gradle-6.3\\bin;;."
+        },
+        "runtime" : {
+            "name" : "Java(TM) SE Runtime Environment",
+            "version" : "13.0.2+8"
+        },
+        "specification" : {
+            "name" : "Java Platform API Specification",
+            "vendor" : "Oracle Corporation",
+            "version" : "13"
+        },
+        "vendor" : {
+            "url" : {
+                "bug" : "https://bugreport.java.com/bugreport/"
+            }
+        },
+        "version" : "13.0.2",
+        "vm" : {
+            "compressedOopsMode" : "Zero based",
+            "info" : "mixed mode, sharing",
+            "name" : "Java HotSpot(TM) 64-Bit Server VM",
+            "specification" : {
+                "name" : "Java Virtual Machine Specification",
+                "vendor" : "Oracle Corporation",
+                "version" : "13"
+            },
+            "vendor" : "Oracle Corporation",
+            "version" : "13.0.2+8"
+        }
+    },
+    "jdk" : {
+        "debug" : "release"
+    },
+    "line" : {
+        "separator" : "\r\n"
+    },
+    "os" : {
+        "arch" : "amd64",
+        "name" : "Windows 10",
+        "version" : "10.0"
+    },
+    "path" : {
+        "separator" : ";"
+    },
+    "sun" : {
+        "arch" : {
+            "data" : {
+                "model" : "64"
+            }
+        },
+        "boot" : {
+            "library" : {
+                "path" : "C:\\Users\\HR11MD\\jdk-13.0.2\\bin"
+            }
+        },
+        "cpu" : {
+            "endian" : "little",
+            "isalist" : "amd64"
+        },
+        "io" : {
+            "unicode" : {
+                "encoding" : "UnicodeLittle"
+            }
+        },
+        "java" : {
+            "command" : "com.reactivebbq.loyalty.Main",
+            "launcher" : "SUN_STANDARD"
+        },
+        "jnu" : {
+            "encoding" : "Cp1252"
+        },
+        "management" : {
+            "compiler" : "HotSpot 64-Bit Tiered Compilers"
+        },
+        "os" : {
+            "patch" : {
+                "level" : ""
+            }
+        }
+    },
+    "user" : {
+        "country" : {
+            "format" : "RO"
+        },
+        "language" : {
+            "format" : "ro"
+        },
+        "script" : "",
+        "timezone" : "Europe/Bucharest",
+        "variant" : ""
+    }
+}
+}
+
