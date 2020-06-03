@@ -5,6 +5,7 @@ import java.nio.file.Paths
 import akka.actor.ActorSystem
 import akka.cluster.sharding.{ClusterSharding, ClusterShardingSettings}
 import akka.http.scaladsl.Http
+import akka.management.scaladsl.AkkaManagement
 import org.slf4j.LoggerFactory
 
 object Main extends App {
@@ -33,6 +34,8 @@ object Main extends App {
   )
 
   val loyaltyRoutes = new LoyaltyRoutes(loyaltyActorSupervisor)(system.dispatcher)
+
+  AkkaManagement(system).start()
 
   Http().bindAndHandle(loyaltyRoutes.routes, "localhost")
 }
